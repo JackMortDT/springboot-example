@@ -1,6 +1,7 @@
 package com.example.demo.service
 
 import com.example.demo.command.Person
+import org.springframework.stereotype.Service
 
 @Service
 class PersonService {
