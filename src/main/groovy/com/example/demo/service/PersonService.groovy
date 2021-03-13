@@ -1,16 +1,18 @@
 package com.example.demo.service
 
-import com.example.demo.command.Person
+import com.example.demo.domain.Person
+import com.example.demo.repository.PersonRepository
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
 class PersonService {
 
+  @Autowired
+  PersonRepository personRepository
+
   List<Person> getPeople() {
-    [new Person(name:"Luis", lastName:"Sastré" , age:24 ),
-     new Person(name:"Angel", lastName: "Hernandez", age: 27),
-     new Person(name:"Victor", lastName: "Kurosaki", age: 26)
-    ]
+    personRepository.findAll()
   }
 
 }

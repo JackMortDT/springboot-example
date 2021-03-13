@@ -1,6 +1,6 @@
 package com.example.demo.command
 
-class Person {
+class PersonCommand {
 
   String name
   String lastName
