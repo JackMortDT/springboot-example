@@ -13,5 +13,6 @@ class Person {
   Long id
   String name
   String lastName
-  String age
+  Integer age
+
 }
